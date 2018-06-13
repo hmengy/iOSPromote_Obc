@@ -16,7 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"首页";
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self createUI];
+}
+-(void)createUI{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 70, 100, 30);
+    [btn setTitle:@"第一个" forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:btn];
 }
 
 
